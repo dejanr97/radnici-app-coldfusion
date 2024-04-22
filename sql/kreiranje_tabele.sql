@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS radnici_db;
+
+USE radnici_db;
+
+CREATE TABLE IF NOT EXISTS radnici(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ime VARCHAR(255) NOT NULL,
+    prezime VARCHAR(255) NOT NULL,
+    pozicija VARCHAR(255) NOT NULL,
+    datum_zaposlenja DATE NOT NULL,
+    plata DECIMAL(10,2) NOT NULL
+);

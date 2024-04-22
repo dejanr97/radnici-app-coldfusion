@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sr-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodavanje novog radnika</title>
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="home">Početna</a></li>
+            <li><a href="svi-radnici.html" class="svi-radnici">Lista svih radnika</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <form id="noviRadnikForma">
+            <label for="ime">Ime:</label><br>
+            <input type="text" id="ime" name="ime" required><br>
+        
+            <label for="prezime">Prezime:</label><br>
+            <input type="text" id="prezime" name="prezime" required><br>
+        
+            <label for="pozicija">Pozicija:</label><br>
+            <input type="text" id="pozicija" name="pozicija" required><br>
+        
+            <label for="datum_zaposlenja">Datum zaposlenja:</label><br>
+            <input type="date" id="datum_zaposlenja" name="datum_zaposlenja" required><br>
+        
+            <label for="plata">Plata:</label><br>
+            <input type="number" id="plata" name="plata" required><br>
+        
+            <button type="submit" id="dodajRadnikaBtn">Dodaj radnika</button>
+        </form>     
+    </div>
+    
+</body>
+</html>

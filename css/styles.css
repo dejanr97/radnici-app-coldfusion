@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #793a00;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 70vh; 
+}
+
+.container {
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 80px;
+    background-color: #c1d8f1;
+    color: #524d4d; 
+    font-weight: bold; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ec1414;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #cec6c6;
+}
+
+#container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #fffbfb; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    overflow-y: auto;
+    margin-top: 0.1px;
+}
+
+
+.edit-button, .delete-button {
+    background-color: #667acf; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.delete-button {
+    margin-left: 20px;
+    background-color: #df2c2c;
+}
+
+#sviRadniciTable {
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+#sviRadniciTable th {
+    color:black;
+    background-color: #978888;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#sviRadniciTable td {
+    color:black;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+#sviRadniciTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#sviRadniciTable tr:hover {
+    background-color: #e2e2e2;
+}
+
+nav {
+    background-color: #2c8edf;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 0px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.home, .svi-radnici, .novi-radnik {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.home {
+    width: 100px;
+    top: 5%;
+    left: 5%;
+    background: #2b15f3;
+}
+
+.novi-radnik {
+    width: 150px;
+    top: 5%;
+    left: 11%;
+    background: #15a06b;
+}
+
+
+.svi-radnici {
+    width: 150px;
+    top: 5%;
+    left: 11%;
+    background: #a19818;
+}
+
+.home:hover, .svi-radnici:hover {
+    background: #2ba9e9;
+    cursor: pointer;
+}
