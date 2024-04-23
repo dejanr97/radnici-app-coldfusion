@@ -1,6 +1,6 @@
 async function povuciPodatke() {
     try {
-        const response = await fetch('http://localhost:8888/radnici-app/radnici-funkcije.cfc?method=prikaz_svih_radnika');
+        const response = await fetch('http://localhost:8888/radnici-app-coldfusion/radnici-funkcije.cfc?method=prikaz_svih_radnika');
         const data = await response.json(); 
         return data;
     } catch (error) {
@@ -127,7 +127,7 @@ function ukloniFormuZaIzmjenu() {
 }
 
 function obrisiRadnika(radnikId) {
-    fetch(`http://localhost:8888/radnici-app/radnici-funkcije.cfc?method=obrisi_radnika&radnik_id=${radnikId}`, {
+    fetch(`http://localhost:8888/radnici-app-coldfusion/radnici-funkcije.cfc?method=obrisi_radnika&radnik_id=${radnikId}`, {
         method: 'POST'
     })
     .then(response => response.json())
@@ -149,7 +149,7 @@ function azurirajRadnika(radnikId, updatedData) {
     podaciForme.append('novi_datum_zaposlenja', updatedData.novi_datum_zaposlenja);
     podaciForme.append('nova_plata', updatedData.nova_plata);
 
-    return fetch('http://localhost:8888/radnici-app/radnici-funkcije.cfc?method=azuriraj_radnika', {
+    return fetch('http://localhost:8888/radnici-app-coldfusion/radnici-funkcije.cfc?method=azuriraj_radnika', {
         method: 'POST',
         body: podaciForme 
     })
@@ -164,7 +164,7 @@ function azurirajRadnika(radnikId, updatedData) {
 }
 
 function kreirajNovogRadnika(podaciForme) {
-    return fetch('http://localhost:8888/radnici-app/radnici-funkcije.cfc?method=kreiraj_novog_radnika', {
+    return fetch('http://localhost:8888/radnici-app-coldfusion/radnici-funkcije.cfc?method=kreiraj_novog_radnika', {
         method: 'POST',
         body: podaciForme
     })
