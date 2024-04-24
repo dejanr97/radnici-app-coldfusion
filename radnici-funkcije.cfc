@@ -52,8 +52,6 @@
         <cfset odgovor.poruka = "">
         <cfset odgovor.uspjeh = false>
         <cfset odgovor.lista = "">
-        
-        <cfset var radnik_id = arguments.radnik_id>
 
         <cfquery name="brisanje_radnika" datasource="radnici_db" result="brisanje_radnika_result">
             DELETE FROM radnici WHERE id = <cfqueryparam value="#radnik_id#" cfsqltype="CF_SQL_INTEGER">
@@ -75,13 +73,6 @@
         <cfset odgovor.poruka = "">
         <cfset odgovor.uspjeh = false>
         <cfset odgovor.lista = "">
-
-        <cfset var radnik_id = Trim(Form.radnik_id)>
-        <cfset var novo_ime = Trim(Form.novo_ime)>
-        <cfset var novo_prezime = Trim(Form.novo_prezime)>
-        <cfset var nova_pozicija = Trim(Form.nova_pozicija)>
-        <cfset var novi_datum_zaposlenja = Trim(Form.novi_datum_zaposlenja)>
-        <cfset var nova_plata = Trim(Form.nova_plata)>
      
         <cfquery name="azuriranje_radnika" datasource="radnici_db" result="azuriranje_radnika_result">
             UPDATE radnici
